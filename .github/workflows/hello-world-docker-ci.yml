@@ -24,3 +24,5 @@ jobs:
 
       - name: Output time
         run: echo "The time was ${{ steps.hello-action.outputs.time }}"
+        
+      - run: echo 'FOO' >> $GITHUB_STEP_SUMMARY
