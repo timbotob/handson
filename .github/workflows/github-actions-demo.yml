@@ -19,14 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "${{ github.event_name }}"
-          echo "${{ github.ref }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Ref:   ${{ github.ref }}"
           
       - uses: actions/checkout@v3.3.0
 
       - name: List files in the repository
         run: |
-          echo "repository ${{ github.repository }}:"
+          echo "Repository: ${{ github.repository }}:"
           tree
     
     
