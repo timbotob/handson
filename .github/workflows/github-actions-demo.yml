@@ -74,8 +74,5 @@ jobs:
       - run: |
           echo "Step 4..."
           sleep 1
-      - run: |
-          echo "Step 5..."
-          sleep 1
     
     
